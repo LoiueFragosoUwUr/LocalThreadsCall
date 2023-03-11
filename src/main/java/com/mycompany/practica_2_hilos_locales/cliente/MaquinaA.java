@@ -4,9 +4,9 @@ import java.rmi.RemoteException;
 import java.util.Scanner;
 
 import com.mycompany.cliente.rmi.Comunicacion;
-import com.mycompany.practica_2_hilos_locales.Addition;
-import com.mycompany.practica_2_hilos_locales.Division;
-import com.mycompany.practica_2_hilos_locales.Multiplication;
+import com.mycompany.practica_2_hilos_locales.threads.Addition;
+import com.mycompany.practica_2_hilos_locales.threads.Division;
+import com.mycompany.practica_2_hilos_locales.threads.Multiplication;
 
 public class MaquinaA {
     public static void main(String[] args){
