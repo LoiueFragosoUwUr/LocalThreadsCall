@@ -23,10 +23,11 @@ public class MaquinaA {
                         if(i ==0){
                             operacion = datos[i];
                             validado = Comunicacion.validaOperacion(operacion);
-                            if(!validado)
-                                break;
-                            else
+                            System.out.println("Entra");
+                            if(!validado){
                                 System.out.println("Debe colocar una operación válida");
+                                break;
+                            }                       
                         }
                         else{
                             try{

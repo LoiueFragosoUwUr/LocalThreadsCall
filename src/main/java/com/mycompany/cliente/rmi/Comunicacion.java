@@ -37,7 +37,7 @@ public class Comunicacion implements ComunicacionInterface{
 
     public static boolean validaOperacion(String operacion){
 
-        return operacion.equals("Suma") || operacion.equals("Resta") || operacion.equals("Multipliacion") || operacion.equals("Division");
+        return operacion.equals("Suma") || operacion.equals("Resta") || operacion.equals("Multiplicacion") || operacion.equals("Division");
     }
 
     @Override
