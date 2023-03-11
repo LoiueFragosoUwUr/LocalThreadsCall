@@ -1,4 +1,4 @@
-package com.mycompany.practica_2_hilos_locales;
+package com.mycompany.practica_2_hilos_locales.servers;
 
 import com.mycompany.practica_2_hilos_locales.threads.ClientThreadMultiDivi;
 import java.io.*;

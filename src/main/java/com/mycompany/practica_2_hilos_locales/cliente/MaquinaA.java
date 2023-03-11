@@ -1,9 +1,9 @@
-package com.mycompany.cliente;
+package com.mycompany.practica_2_hilos_locales.cliente;
 
 import java.rmi.RemoteException;
 import java.util.Scanner;
 
-import com.mycompany.cliente.rmi.Comunicacion;
+import com.mycompany.practica_2_hilos_locales.cliente.rmi.Comunicacion;
 import com.mycompany.practica_2_hilos_locales.threads.Addition;
 import com.mycompany.practica_2_hilos_locales.threads.Division;
 import com.mycompany.practica_2_hilos_locales.threads.Multiplication;
