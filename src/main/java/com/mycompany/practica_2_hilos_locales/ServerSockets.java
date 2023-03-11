@@ -27,6 +27,7 @@ public class ServerSockets {
         try {
         // el socket acepta la peticion de conexion
             clientSocket = serverSocket.accept();
+            System.out.println(" se conceta un cliente ");
         } catch (IOException e) {
             System.err.println("Fallo al aceptar la peticion.");
             System.exit(1);
@@ -50,19 +51,14 @@ public class ServerSockets {
 //        InPutInteger=Integer.valueOf(LectorEntrada.readLine());
         System.out.println(" Please type any character or string to proceed ");
         System.out.println(" Otherwise to exit you have to type zero twice");
-    while (LectorEntrada.readLine() != null){
-        InPutInteger=Integer.valueOf(LectorEntrada.readLine());
-        InPutInteger_2=Integer.valueOf(LectorEntrada.readLine());
-        /*while ((InPutInteger = LectorEntrada.readLine()) != null) {*/
-          
-        // Se procede a enviar ese texto recibido a Protocolo 
-    //para que nos indique que debemos responder y la respuesta la guardamos en LineaDeSalida
+        String Entrada=LectorEntrada.readLine();
+                
+    while (Entrada != null){
+          String datos [] = Entrada.split(" ");        
+        InPutInteger=Integer.parseInt(datos[1]);
+        InPutInteger_2=Integer.parseInt(datos[2]);
              OutPutInteger = ptt.ReturnsMultiplicationResult(InPutInteger,InPutInteger_2);
-             //escribimos la respuesta en el escritor del Socket
-             EscritorSalida.println(OutPutInteger);
-             //ahora ya que lo escribimos verificamos si es un Adios y procedemos a cerrar todo
-             System.out.println(" Please type any character or string to proceed ");
-             System.out.println(" Otherwise to exit you have to type zero twice");
+             System.out.println("The result of the multiplication is "+OutPutInteger);
              if (OutPutInteger==0)
                 break;
         }
